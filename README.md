@@ -1,5 +1,5 @@
-# cs4220-angular
-ents are expected to have strong programming skills and working knowledge of HTML.
+# Syllabus for CS4420 Course. (This repository is for assignments and projects for the course during the Spring 2017.)
+Students are expected to have strong programming skills and working knowledge of HTML.
 
 Textbook
 Eloquent Javascript - required http://eloquentjavascript.net/
