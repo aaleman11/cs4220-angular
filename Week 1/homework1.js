@@ -132,17 +132,13 @@ function markupValue(arr, num){
 
         const newValue = {[key]: value}
         cars.push(newValue)
-
-        // console.log(cars)
-
-
     }
 
     const newValues = {'cars': cars, total}
 
-    console.log(newValues)
-
-
+    return newValues
 }
 
-markupValue(cars, 10.5)
+const updatedValues = markupValue(cars, 10.5)
+
+console.log(updatedValues)
