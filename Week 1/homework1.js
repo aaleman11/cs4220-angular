@@ -91,6 +91,26 @@ console.log()
 
 //Question 5
 console.log('Question 5')
+
+function averageArray(arr){
+    let count = 0
+    let totalSum = 0
+
+    for(let i = 0; i < arr.length; i++){
+        if(!isNaN(arr[i])){
+            totalSum += (arr[i]*1)
+            count++
+        }
+    }
+
+    console.log(totalSum/count)
+}
+
+averageArray([3, 9, 'hello', 4, '95', 'abc', '1', 8, { key: 'value ' }])
+console.log()
+
+//Question 6
+console.log('Question 6')
 const cars = [
   { type: 'hybrid', wholesale: 25000 },
   { type: 'minivan', wholesale: 28000 },
@@ -98,28 +118,31 @@ const cars = [
   { type: 'convertible', wholesale: 45750 }
 ]
 
-function markupValue(obj, num){
-    
+function markupValue(arr, num){
+
+    const cars = []
+    let total = 0
+
+    for(let i = 0; i < arr.length; i++) {
+
+        const car = arr[i]
+        const key = car.type
+        const value = car.wholesale * ((num/100) + 1)
+        total += (value - car.wholesale)
+
+        const newValue = {[key]: value}
+        cars.push(newValue)
+
+        // console.log(cars)
+
+
+    }
+
+    const newValues = {'cars': cars, total}
+
+    console.log(newValues)
+
 
 }
 
-//Question 6
-// const transformer = {
-//     name: 'Optimus Prime',
-//     teams: 'Autobots',
-//     colors: ['red', 'blue', 'white'],
-//     example: {
-//         nested: true
-//     }
-// }
-// transformer.homeWorld = 'Cybertron'
-// transformer['vehicle'] = 'truck'
-// console.log(transformer)
-
-// const
-//     name = 'Cydney',
-//     anything = 'job',
-//     val = 'software engineer'
-
-// const person = { name, [anything]: val }
-// console.log(person)
+markupValue(cars, 10.5)
