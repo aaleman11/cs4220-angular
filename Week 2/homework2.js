@@ -92,7 +92,47 @@ calc_v2.print()                         //1
 calc_v2.clear()                         //0
 calc_v2.print()                         //0
 
-//Question 4
+console.log()
 
+//Question 4
+console.log("Question 4")
+const media_arr = [['media', 'facebook'], ['company', 'github'], ['likes', 58445]]
+
+function convertToFunction(arr) {
+
+    const newObj = {}
+
+    arr.forEach(function(element) {
+
+        let type = element[0]
+        let value = element[1]
+    
+        newObj[type] = value
+
+    });
+
+    return newObj
+
+}
+
+const modifiedArray = convertToFunction(media_arr)
+console.log(modifiedArray)
+console.log()
 
 //Question 5
+console.log("Question 5")
+
+const media_obj = { media: 'facebook', company: 'github', likes: 58445 }
+
+function convertToArray(obj){
+
+    const arr = Object.entries(obj)
+
+    return arr
+
+}
+
+const newArray = convertToArray(media_obj)
+console.log(newArray)
+
+
