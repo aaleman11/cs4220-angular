@@ -1,0 +1,16 @@
+{
+  "name": "mystery-word-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "word game",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alfredo Aleman",
+  "license": "ISC",
+  "dependencies": {
+      "inquirer": "^3.0.1",
+      "yargs": "^6.6.0"
+  }
+}
